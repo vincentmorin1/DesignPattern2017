@@ -7,7 +7,7 @@ public class Constante extends Expr{
 		this.v=v;
 	}
 	public double eval() {
-		return v;
+		return v.getContexte(v);
 	}
 	
 	public String toString(){
