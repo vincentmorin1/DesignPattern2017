@@ -1,8 +1,8 @@
-package partie1;
+package CompositePattern;
 
 import java.util.HashMap;
 
-public class Contexte {
+public class Contexte{
 	private HashMap<String,Integer> C;
 		
 	public Contexte(){
@@ -10,10 +10,12 @@ public class Contexte {
 		this.C=C;
 	}
 	
-	public void addContexte (String s, int val){
+	public void setContexte (String s, int val){
 		C.put(s, val);
 	}
 	
-	public int getContexte(String s)
+	public int getContexte(String s) {
+		return C.get(s);
+	}
 
 }

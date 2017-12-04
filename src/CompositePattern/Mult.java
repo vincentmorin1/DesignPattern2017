@@ -1,11 +1,10 @@
-package partie1;
+package CompositePattern;
 
-public class Mult extends NAire{
-	private Expr fg;
-	private Expr fd;
+public class Mult extends ExprNoeud{
 	
-	public Mult (Expr fg, Expr fd) {
-		super(fg,fd);
+	public Mult (NAire fg, NAire fd) {
+		this.fd = fd;
+		this.fg = fg;
 	}
 	
 	public double eval(){

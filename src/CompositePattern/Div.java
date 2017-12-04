@@ -1,11 +1,10 @@
-package partie1;
+package CompositePattern;
 
-public class Div extends NAire{
-	private Expr fg;
-	private Expr fd;
+public class Div extends ExprNoeud{
 	
-	public Div (Expr fg, Expr fd) {
-		super(fg,fd);
+	public Div (NAire fg, NAire fd) {
+		this.fd = fd;
+		this.fg = fg;
 	}
 	
 	public double eval(){

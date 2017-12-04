@@ -1,9 +1,10 @@
-package partie1;
+package CompositePattern;
 
-public class Plus extends NAire{
+public class Plus extends ExprNoeud{
 	
-	public Plus (Expr fg, Expr fd) {
-		super(fg,fd);
+	public Plus (NAire fg, NAire fd) {
+		this.fd = fd;
+		this.fg = fg;
 	}
 	
 	public double eval(){
