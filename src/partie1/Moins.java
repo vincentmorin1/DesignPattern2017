@@ -12,8 +12,10 @@ public class Moins extends NAire{
 		return fg.eval()-fd.eval();
 	}
 	
-	public String decompiler(){
+	public String toString(){
 		String res="MOINS (";
-		return res+=fg.decompiler()+","+fd.decompiler();
+		return res+=fg.toString()+","+fd.toString();
 	}
+
+	
 }

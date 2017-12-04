@@ -12,8 +12,10 @@ public class Div extends NAire{
 		return fg.eval()/fd.eval();
 	}
 	
-	public String decompiler(){
+	public String toString(){
 		String res="DIV (";
-		return res+=fg.decompiler()+","+fd.decompiler();
+		return res+=fg.toString()+","+fd.toString();
 	}
+
+	
 }

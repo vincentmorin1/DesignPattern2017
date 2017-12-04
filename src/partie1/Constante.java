@@ -10,7 +10,7 @@ public class Constante extends Expr{
 		return v;
 	}
 	
-	public String decompiler(){
+	public String toString(){
 		return Double.toString(v);
 	}
 }
