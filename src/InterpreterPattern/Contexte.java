@@ -1,4 +1,4 @@
-package CompositePattern;
+package InterpreterPattern;
 
 import java.util.HashMap;
 

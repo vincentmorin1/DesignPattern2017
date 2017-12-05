@@ -1,4 +1,4 @@
-package CompositePattern;
+
 
 import InterpreterPattern.Contexte;
 
