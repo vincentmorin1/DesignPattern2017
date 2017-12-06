@@ -10,13 +10,6 @@ public class Variable extends ExprFeuille {
 	
 	public String toString(){
 		return var;
-	}
-
-	@Override
-	public double eval() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
+	}	
 	
 }

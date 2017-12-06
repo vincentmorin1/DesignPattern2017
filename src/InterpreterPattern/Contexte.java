@@ -3,18 +3,18 @@ package InterpreterPattern;
 import java.util.HashMap;
 
 public class Contexte{
-	private HashMap<String,Integer> C;
+	private HashMap<String,Double> C;
 		
 	public Contexte(){
-		HashMap<String,Integer> C = new HashMap<String,Integer>();
+		HashMap<String, Double> C = new HashMap<String,Double>();
 		this.C=C;
 	}
 	
-	public void setContexte (String s, int val){
-		C.put(s, val);
+	public void setContexte (String s, double d){
+		C.put(s, d);
 	}
 	
-	public int getContexte(String s) {
+	public Double getContexte(String s) {
 		return C.get(s);
 	}
 

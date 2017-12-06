@@ -2,15 +2,11 @@ package CompositePattern;
 
 public class Div extends ExprNoeud{
 	
-	public Div (NAire fg, NAire fd) {
+	public Div (Arbre fg, Arbre fd) {
 		this.fd = fd;
 		this.fg = fg;
 	}
-	
-	public double eval(){
-		return fg.eval()/fd.eval();
-	}
-	
+		
 	public String toString(){
 		String res="DIV (";
 		return res+=fg.toString()+","+fd.toString();

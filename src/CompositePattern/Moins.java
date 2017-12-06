@@ -3,13 +3,9 @@ package CompositePattern;
 public class Moins extends ExprNoeud{
 	
 	
-	public Moins (NAire fg, NAire fd) {
+	public Moins (Arbre fg, Arbre fd) {
 		this.fd = fd;
 		this.fg = fg;
-	}
-	
-	public double eval(){
-		return fg.eval()-fd.eval();
 	}
 	
 	public String toString(){

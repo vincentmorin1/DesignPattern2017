@@ -1,19 +1,17 @@
 package CompositePattern;
 
+import InterpreterPattern.Contexte;
+
 public class Constante extends ExprFeuille{
 	
-	private int i;
+	private double i;
 	
-	public Constante (int i){
+	public Constante (double i){
 		this.i=i;
 	}
-	
-	public double eval() {
-		return 0;
-	}
-	
+		
 	public String toString(){
-		return Integer.toString(this.i);
+		return Double.toString(this.i);
 	}
 	
 }

@@ -1,11 +1,11 @@
 package CompositePattern;
 
-public abstract class ExprNoeud implements NAire{
+public abstract class ExprNoeud implements Arbre{
 
-	protected NAire fg;
-	protected NAire fd;
+	protected Arbre fg;
+	protected Arbre fd;
 	
-	public NAire getChildren(int a){
+	public Arbre getChildren(int a){
 		if (a == 0) {
 			return getFilsGauche();
 		}
@@ -17,10 +17,10 @@ public abstract class ExprNoeud implements NAire{
 			throw new IllegalArgumentException();
 		}
 	}
-	private NAire getFilsGauche() {
+	private Arbre getFilsGauche() {
 		return this.fg;
 	}
-	private NAire getFilsDroit() {
+	private Arbre getFilsDroit() {
 		return this.fd;
 	}
 	

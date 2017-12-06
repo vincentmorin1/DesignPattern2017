@@ -1,8 +1,8 @@
 package CompositePattern;
 
-public abstract class ExprFeuille implements NAire{
+public abstract class ExprFeuille implements Arbre{
 	
-	public NAire getChildren(int a){
+	public Arbre getChildren(int a){
 		return null; //une feuille n'a pas de fils
 	}
 

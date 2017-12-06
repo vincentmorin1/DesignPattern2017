@@ -2,5 +2,7 @@ package InterpreterPattern;
 
 public interface AbstractExpression{
 
-	public void interpret();
+	public double eval(Contexte c);
+	
+	
 }
