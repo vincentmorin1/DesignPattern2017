@@ -1,4 +1,4 @@
-package CompositePattern;
+package partie1;
 
 public class Mult extends ExprNoeud{
 	
@@ -9,7 +9,12 @@ public class Mult extends ExprNoeud{
 		
 	public String toString(){
 		String res="MULT (";
-		return res+=fg.toString()+","+fd.toString();
+		return res+=fg.toString()+","+fd.toString()+")";
+	}
+
+	@Override
+	public int eval() {
+		return fg.eval()*fd.eval();
 	}
 
 	

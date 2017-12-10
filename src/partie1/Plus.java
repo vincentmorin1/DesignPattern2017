@@ -1,4 +1,4 @@
-package CompositePattern;
+package partie1;
 
 public class Plus extends ExprNoeud{
 	
@@ -9,6 +9,11 @@ public class Plus extends ExprNoeud{
 		
 	public String toString(){
 		String res="PLUS (";
-		return res+=fg.toString()+","+fd.toString();
+		return res+=fg.toString()+","+fd.toString()+")";
+	}
+
+	@Override
+	public int eval() {
+		return fg.eval()+fd.eval();
 	}
 }

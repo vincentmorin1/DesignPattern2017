@@ -1,4 +1,4 @@
-package CompositePattern;
+package partie1;
 
 public class Variable extends ExprFeuille {
 
@@ -10,6 +10,11 @@ public class Variable extends ExprFeuille {
 	
 	public String toString(){
 		return var;
+	}
+
+	@Override
+	public int eval() {
+		return Contexte.getContexte(this.var);
 	}	
 	
 }

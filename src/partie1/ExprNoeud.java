@@ -1,9 +1,11 @@
-package CompositePattern;
+package partie1;
 
 public abstract class ExprNoeud implements Arbre{
 
 	protected Arbre fg;
 	protected Arbre fd;
+	
+	public abstract int eval();
 	
 	public Arbre getChildren(int a){
 		if (a == 0) {
